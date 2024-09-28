@@ -1,2 +1,2 @@
 # el gallo de oro
-record site
+publishing site
