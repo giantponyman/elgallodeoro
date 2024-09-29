@@ -1,2 +1,2 @@
 # el gallo de oro
-publishing site
+elgallodeoro.net
