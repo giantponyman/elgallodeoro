@@ -1,0 +1,71 @@
+/* || General styles */
+body
+p
+h1
+h2
+h3
+h4
+h5
+ul
+ol
+table
+Links
+
+/* || Typography */
+
+/* || Images */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* || Header and Main Navigation */
+ul.navbar-links {
+  list-style-type: none;
+  position: fixed;
+  right:0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: greenyellow;
+}
+
+li a.navbar-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  background-color:seagreen;
+  color: red;
+}
+
+li a.navbar-link:hover {
+  background-color: #855;
+  color: white;
+}
+
+/* || Body */
+details {
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin:10px;
+  width:fit-content;
+}
+
+summary {
+ font-family:sans-serif;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
