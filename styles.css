@@ -14,11 +14,8 @@ Links
 /* || Typography */
 
 /* || Images */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.banner {
+  width: 100%;
 }
 
 /* || Header and Main Navigation */
