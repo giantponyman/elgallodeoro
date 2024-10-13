@@ -1,5 +1,11 @@
 /* || Typography */
 
+/* || scrollbar */
+::-webkit-scrollbar {
+  width: 0em;
+  height: 1em;
+}
+
 /* || Images */
 
 /* || audio */
