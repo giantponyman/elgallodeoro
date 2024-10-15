@@ -1,28 +1,153 @@
-/* || General styles */
-body
-p
-h1
-h2
-h3
-h4
-h5
-ul
-ol
-table
-Links
-
+.background {
+  background: rgb(255, 219, 219);
+}
 /* || Typography */
 
-/* || Images */
-.banner {
+.since {
+  font-family: sans-serif;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 0.8em;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.scroll-left {
+  height: 1em;
+  overflow: hidden;
+  position: relative;
+  color: #ff00c8;
+}
+.scroll-left p {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 1em;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 0.8em;
+  font-style: oblique;
+  font-weight: bolder;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-left 15s linear infinite;
+  -webkit-animation: scroll-left 15s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%);
+  }
 }
 
-/* || Header and Main Navigation */
+/* || scrollbar */
+::-webkit-scrollbar {
+  width: 0em;
+  height: 1em;
+}
+
+/* || Images */
+
+/* || audio */
+audio::-webkit-media-controls-panel {
+  background-color: white;
+  border-radius: 0%;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: white;
+  border-radius: 0%;
+}
+audio::-webkit-media-controls-timeline {
+  background-color: white;
+  border-radius: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.audiotitle {
+  font-family: sans-serif;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 0.8em;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+/* || information*/
+.info-div {
+  order: 0;
+  width: 50%;
+  top: 0.5em; /* this is required for "sticky" to work */
+  position: sticky;
+  position: -webkit-sticky;
+  align-self: flex-start;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .about {
+    font-size: 1em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .contact {
+    font-size: 1em;
+  }
+  .info-div {
+    order: 0;
+    width: 100%;
+    position: relative;
+  }
+  .projects-div {
+    order: 1;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 760px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+/* || Navigation */
 ul.navbar-links {
   list-style-type: none;
   position: fixed;
-  right:0;
+  right: 0;
   margin: 0;
   padding: 0;
   width: 200px;
@@ -34,7 +159,7 @@ li a.navbar-link {
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
-  background-color:seagreen;
+  background-color: seagreen;
   color: red;
 }
 
@@ -43,26 +168,49 @@ li a.navbar-link:hover {
   color: white;
 }
 
-/* || Body */
+/* || projects */
+
+.projects-div {
+  order: 1;
+  max-width: 49%;
+}
+
 details {
-  border: 1px solid green;
-  border-radius: 4px;
+  border: 1px solid black;
   padding: 0.5em 0.5em 0;
-  margin:10px;
-  width:fit-content;
+  margin: 0.75em;
+  width: fit-content;
 }
 
 summary {
- font-family:sans-serif;
+  font-family: sans-serif;
+  font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
 
+summary:hover {
+  background: rgb(255, 255, 255);
+  color: #ff00c8;
+}
+
 details[open] {
   padding: 0.5em;
+  width: fit-content;
+  background: rgb(255, 255, 255);
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
+  color: #ff00c8;
+  background: rgb(255, 255, 255);
+  border-bottom: solid black 1px;
+}
+
+details[open] summary:hover {
+}
+
+.description {
+  font-family: monospace;
+  margin-bottom: 2em;
 }
