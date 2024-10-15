@@ -1,14 +1,20 @@
 .background {
-  background: rgb(255, 219, 219);
+  background: rgb(255, 229, 229);
 }
 /* || Typography */
-
+.about {
+  border-top: #ff00c8 dotted 1px;
+  margin-top: 1em;
+  padding-top: 1em;
+  font-size: 1em;
+  font-style: oblique;
+}
 .since {
   font-family: sans-serif;
   margin-top: 1em;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-size: 0.8em;
+  font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
 }
@@ -17,6 +23,7 @@
   overflow: hidden;
   position: relative;
   color: #ff00c8;
+  border-bottom: #ff00c8 dotted 1px;
 }
 .scroll-left p {
   position: absolute;
@@ -78,6 +85,21 @@
 
 /* || Images */
 
+/* || images */
+.documentation {
+  max-width: 98%;
+  max-height: 70vh;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  overflow-x: auto;
+  border: 1px solid black;
+}
+.scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 2em;
+}
+
 /* || audio */
 audio::-webkit-media-controls-panel {
   background-color: white;
@@ -107,7 +129,7 @@ audio::-webkit-media-controls-timeline {
 /* || information*/
 .info-div {
   order: 0;
-  width: 50%;
+  width: 55%;
   top: 0.5em; /* this is required for "sticky" to work */
   position: sticky;
   position: -webkit-sticky;
@@ -172,7 +194,7 @@ li a.navbar-link:hover {
 
 .projects-div {
   order: 1;
-  max-width: 49%;
+  max-width: 55%;
 }
 
 details {
