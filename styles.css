@@ -11,7 +11,8 @@
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  color: #ff00c8;
+  font-family: monospace;
+  color: #0d7f00;
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -98,8 +99,8 @@ audio::-webkit-media-controls-timeline {
   margin-bottom: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: #ff00c8 solid 1px;
-  border-top: #ff00c8 solid 1px;
+  border-bottom: #0d7f00 solid 1px;
+  border-top: #0d7f00 solid 1px;
 }
 
 details {
@@ -146,7 +147,7 @@ details[open] summary:hover {
 }
 
 /* || responsive formatting */
-@media (max-width: 760px) {
+@media (max-width: 700px) {
   .header {
     order: 0;
     width: 100%;
