@@ -12,8 +12,8 @@
 .since {
   font-family: sans-serif;
   margin-top: 1em;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
   font-size: 1em;
   font-style: oblique;
   font-weight: bolder;
@@ -131,11 +131,6 @@ audio::-webkit-media-controls-timeline {
   order: 0;
   width: 55%;
   top: 0.5em; /* this is required for "sticky" to work */
-  position: sticky;
-  position: -webkit-sticky;
-  align-self: flex-start;
-  margin-bottom: 0.5em;
-  text-align: center;
 }
 
 @media (max-width: 760px) {
