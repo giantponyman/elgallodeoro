@@ -89,8 +89,6 @@ audio::-webkit-media-controls-timeline {
   margin-left: auto;
   margin-right: auto;
   color: rgb(2, 27, 167);
-
-  border: solid #0d7f00 1px;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -145,10 +143,6 @@ details[open] summary {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
-
-  border: solid #0d7f00 1px;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 
 /* || responsive formatting */
