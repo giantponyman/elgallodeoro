@@ -2,6 +2,9 @@
   background: rgb(254, 209, 86);
 }
 
+p {
+  color: rgb(2, 27, 167);
+}
 .banner {
   width: 100%;
   margin-bottom: 0.5em;
@@ -12,7 +15,6 @@
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
-  color: #0d7f00;
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -86,6 +88,11 @@ audio::-webkit-media-controls-timeline {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
+  color: rgb(2, 27, 167);
+
+  border: solid #0d7f00 1px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* || projects */
@@ -99,12 +106,10 @@ audio::-webkit-media-controls-timeline {
   margin-bottom: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: #0d7f00 solid 1px;
-  border-top: #0d7f00 solid 1px;
 }
 
 details {
-  border: 1px solid black;
+  border: 1px solid #0d7f00;
   padding: 0.5em 0.5em 0;
   margin: 0.75em;
   width: fit-content;
@@ -113,13 +118,14 @@ details {
 summary {
   font-family: sans-serif;
   font-weight: bold;
+  color: rgb(2, 27, 167);
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
+  background: rgb(255, 255, 255);
 }
 
 summary:hover {
   background: rgb(255, 255, 255);
-  color: #ff00c8;
 }
 
 details[open] {
@@ -130,9 +136,8 @@ details[open] {
 
 details[open] summary {
   margin-bottom: 0.5em;
-  color: #ff00c8;
   background: rgb(255, 255, 255);
-  border-bottom: solid black 1px;
+  border-bottom: solid #0d7f00 1px;
 }
 
 /* || footer*/
@@ -141,13 +146,17 @@ details[open] summary {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  border: solid #0d7f00 1px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* || responsive formatting */
 @media (max-width: 700px) {
   .header {
     order: 0;
-    width: 100%;
+    width: 90%;
   }
   .projects {
     order: 1;
@@ -155,6 +164,6 @@ details[open] summary {
   }
   .footer {
     order: 3;
-    width: 100%;
+    width: 90%;
   }
 }
