@@ -5,28 +5,7 @@
 p {
   color: rgb(2, 27, 167);
 }
-<<<<<<< HEAD
-.since {
-  font-family: sans-serif;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  font-size: 1em;
-  font-style: oblique;
-  font-weight: bolder;
-}
-.scroll-left {
-  height: 1em;
-  overflow: hidden;
-  position: relative;
-  color: #ff00c8;
-  border-bottom: #ff00c8 dotted 1px;
-}
-.scroll-left p {
-  position: absolute;
-=======
 .banner {
->>>>>>> 4230e201914f16c8033c8e8c3eda88437f06542d
   width: 100%;
   margin-bottom: 0.5em;
 }
@@ -107,67 +86,11 @@ audio::-webkit-media-controls-timeline {
   padding-top: 0.5em;
   order: 0;
   width: 55%;
-<<<<<<< HEAD
-  top: 0.5em; /* this is required for "sticky" to work */
-}
-
-@media (max-width: 760px) {
-  .about {
-    font-size: 1em;
-  }
-  .title {
-    font-size: 1.5em;
-  }
-  .contact {
-    font-size: 1em;
-  }
-  .info-div {
-    order: 0;
-    width: 100%;
-    position: relative;
-  }
-  .projects-div {
-    order: 1;
-    min-width: 100%;
-  }
-}
-
-@media (min-width: 760px) {
-  .title {
-    font-size: 2em;
-  }
-}
-
-/* || Navigation */
-ul.navbar-links {
-  list-style-type: none;
-  position: fixed;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: greenyellow;
-}
-
-li a.navbar-link {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  text-align: center;
-  background-color: seagreen;
-  color: red;
-}
-
-li a.navbar-link:hover {
-  background-color: #855;
-  color: white;
-=======
   margin-left: auto;
   margin-right: auto;
   color: rgb(2, 27, 167);
   padding-left: 1em;
   padding-right: 1em;
->>>>>>> 4230e201914f16c8033c8e8c3eda88437f06542d
 }
 
 /* || projects */
