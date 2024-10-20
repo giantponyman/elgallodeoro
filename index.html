@@ -4,23 +4,44 @@
     <title>El Gallo de Oro</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <!-- info -->
   <body class="background">
-    <div>
-      <img
-        class="info-div"
-        src="images/el-gallo-sign.png"
-        alt="el gallo sign"
-      />
-      <div class="info-div scroll-left">
-        <p>el Gallo de Oro, publisher. Family run since 1963.</p>
-      </div>
+    <div class="header">
+      <img class="banner" src="images/el-gallo-sign.png" />
+      <p class="marquee">
+        <span>
+          el Gallo de Oro ~~~ publisher of audio projects and books ~~~ family
+          run since 1963 ~~~ operating out of Providence, Rhode Island ~~~ el
+          Gallo de Oro ~~~ publisher of audio projects and books ~~~ family run
+          since 1963 ~~~ operating out of Providence, Rhode Island ~~~ el Gallo
+          de Oro ~~~ publisher of audio projects and books ~~~ family run since
+          1963 ~~~ operating out of Providence, Rhode Island ~~~
+        </span>
+      </p>
     </div>
 
     <!-- publications -->
-    <div class="projects-div">
+    <div class="projects">
       <!--  el gallo 1: The Americanization of Shmuel -->
       <details>
         <summary>elgallo1: The Americanization of Shmuel</summary>
@@ -30,6 +51,14 @@
             src="images/americanization-cover-draft.jpg"
           />
         </div>
+        <p class="audiotitle">The Americanization of Shmuel - mp3 sample</p>
+        <audio controls display="inline" preload="metadata">
+          <source
+            src="audio/the-americanization-of-shmuel.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
         <p>
           A family sings and listens together, trying to remember
           lullabies--lost, teetering on the edge of memory. An old man
@@ -72,15 +101,18 @@
         </p>
       </details>
     </div>
-    <div class="projects-div">
-      <p class="about">
+
+    <div class="footer">
+      <p>
         In 1963, my grandparents Lily and Sam established el Gallo de Oro on
         Calle Fortaleza in San Juan, Puerto Rico. For more than fifty years
         their jewelry store was a staple of the old city, a magical place where
         you would always find warm conversation and precious, beautiful things
-        from all over the world. They closed shop in 2010. In 2024 I re-opened
-        el Gallo de Oro as a publisher.<br />-Eli Neuman-Hammond
+        from all over the world. In 2010 they closed shop, and in 2024 I
+        re-opened el Gallo de Oro as a publisher of audio projects and limited
+        edition books.
       </p>
+      <p>-Eli Neuman-Hammond</p>
       <p>Contact: eli@elgallodeoro.net</p>
     </div>
   </body>

@@ -1,14 +1,11 @@
 .background {
-  background: rgb(255, 229, 229);
+  background: rgb(254, 209, 86);
 }
-/* || Typography */
-.about {
-  border-top: #ff00c8 dotted 1px;
-  margin-top: 1em;
-  padding-top: 1em;
-  font-size: 1em;
-  font-style: oblique;
+
+p {
+  color: rgb(2, 27, 167);
 }
+<<<<<<< HEAD
 .since {
   font-family: sans-serif;
   margin-top: 1em;
@@ -27,53 +24,40 @@
 }
 .scroll-left p {
   position: absolute;
+=======
+.banner {
+>>>>>>> 4230e201914f16c8033c8e8c3eda88437f06542d
   width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 1em;
-  text-align: center;
-  font-family: sans-serif;
-  margin: 0;
-  padding-bottom: 0;
-  font-size: 0.8em;
-  font-style: oblique;
-  font-weight: bolder;
-  /* Starting position */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  /* Apply animation to this element */
-  -moz-animation: scroll-left 15s linear infinite;
-  -webkit-animation: scroll-left 15s linear infinite;
-  animation: scroll-left 15s linear infinite;
+  margin-bottom: 0.5em;
 }
-/* Move it (define the animation) */
-@-moz-keyframes scroll-left {
+/* Make it a marquee */
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 60s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
   0% {
-    -moz-transform: translateX(100%);
+    transform: translate(0, 0);
   }
   100% {
-    -moz-transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes scroll-left {
-  0% {
-    -webkit-transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
-@keyframes scroll-left {
-  0% {
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%);
-  }
-  100% {
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%);
+    transform: translate(-100%, 0);
   }
 }
 
@@ -83,8 +67,6 @@
   height: 1em;
 }
 
-/* || Images */
-
 /* || images */
 .documentation {
   max-width: 98%;
@@ -93,11 +75,6 @@
   margin-right: 0.5em;
   overflow-x: auto;
   border: 1px solid black;
-}
-.scroll {
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-bottom: 2em;
 }
 
 /* || audio */
@@ -115,7 +92,6 @@ audio::-webkit-media-controls-timeline {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .audiotitle {
   font-family: sans-serif;
   margin-top: 1em;
@@ -126,10 +102,12 @@ audio::-webkit-media-controls-timeline {
   font-weight: bolder;
 }
 
-/* || information*/
-.info-div {
+/* || header*/
+.header {
+  padding-top: 0.5em;
   order: 0;
   width: 55%;
+<<<<<<< HEAD
   top: 0.5em; /* this is required for "sticky" to work */
 }
 
@@ -183,17 +161,30 @@ li a.navbar-link {
 li a.navbar-link:hover {
   background-color: #855;
   color: white;
+=======
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(2, 27, 167);
+  padding-left: 1em;
+  padding-right: 1em;
+>>>>>>> 4230e201914f16c8033c8e8c3eda88437f06542d
 }
 
 /* || projects */
 
-.projects-div {
+.projects {
   order: 1;
   max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 details {
-  border: 1px solid black;
+  border: 1px solid #0d7f00;
   padding: 0.5em 0.5em 0;
   margin: 0.75em;
   width: fit-content;
@@ -202,13 +193,13 @@ details {
 summary {
   font-family: sans-serif;
   font-weight: bold;
+  color: rgb(2, 27, 167);
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
 
 summary:hover {
   background: rgb(255, 255, 255);
-  color: #ff00c8;
 }
 
 details[open] {
@@ -219,15 +210,30 @@ details[open] {
 
 details[open] summary {
   margin-bottom: 0.5em;
-  color: #ff00c8;
   background: rgb(255, 255, 255);
-  border-bottom: solid black 1px;
+  border-bottom: solid #0d7f00 1px;
 }
 
-details[open] summary:hover {
+/* || footer*/
+.footer {
+  order: 3;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.description {
-  font-family: monospace;
-  margin-bottom: 2em;
+/* || responsive formatting */
+@media (max-width: 700px) {
+  .header {
+    order: 0;
+    width: 90%;
+  }
+  .projects {
+    order: 1;
+    min-width: 100%;
+  }
+  .footer {
+    order: 3;
+    width: 90%;
+  }
 }
