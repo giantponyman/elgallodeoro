@@ -1,5 +1,5 @@
 .background {
-  background: rgb(254, 209, 86);
+  background: #fffdf8;
 }
 
 p {
@@ -53,7 +53,7 @@ p {
   margin-left: 0.2em;
   margin-right: 0.5em;
   overflow-x: auto;
-  border: 1px solid black;
+  border: 1px solid #ce9401;
 }
 
 /* || audio */
@@ -107,7 +107,7 @@ audio::-webkit-media-controls-timeline {
 }
 
 details {
-  border: 1px solid #0d7f00;
+  border: 1px solid #ce9401;
   padding: 0.5em 0.5em 0;
   margin: 0.75em;
   width: fit-content;
@@ -134,7 +134,7 @@ details[open] {
 details[open] summary {
   margin-bottom: 0.5em;
   background: rgb(255, 255, 255);
-  border-bottom: solid #0d7f00 1px;
+  border-bottom: solid #ce9401 1px;
 }
 
 /* || footer*/
