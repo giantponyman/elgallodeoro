@@ -49,7 +49,7 @@ p {
 /* || images */
 .documentation {
   max-width: 98%;
-  max-height: 70vh;
+  max-height: 30rem;
   margin-left: 0.2em;
   margin-right: 0.5em;
   overflow-x: auto;
