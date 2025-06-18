@@ -164,3 +164,9 @@ details[open] summary {
     width: 90%;
   }
 }
+
+input[type="submit"] {
+  font-family: serif;
+  color: rgb(2, 27, 167);
+  background-color: #fffdf8;
+}
