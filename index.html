@@ -44,7 +44,7 @@
     <!-- publications -->
     <div class="projects">
       <!--  elgallo1: The Americanization of Shmuel -->
-      <details>
+       <details id="elgallo1">
         <summary>elgallo1: The Americanization of Shmuel</summary>
         <div class="scroll">
           <img class="documentation" src="images/taos-cover.png" />
@@ -209,4 +209,28 @@
          </form> </p>
     </div>
   </body>
+
+  <script>
+  // Open <details> if its anchor is targeted
+  window.addEventListener('DOMContentLoaded', function() {
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash);
+      if (el && el.tagName.toLowerCase() === 'details') {
+        el.open = true;
+        el.scrollIntoView({behavior: "smooth"});
+      }
+    }
+    // Also handle clicks on project links
+    document.querySelectorAll('.project-links a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const hash = this.getAttribute('href');
+        const el = document.querySelector(hash);
+        if (el && el.tagName.toLowerCase() === 'details') {
+          el.open = true;
+        }
+      });
+    });
+  });
+</script>
+
 </html>
