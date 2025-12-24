@@ -95,7 +95,6 @@ label {
 .gallery img:hover {
   opacity: 0.8;
 }
-
 .lightbox {
   display: none;
   position: fixed;
@@ -117,6 +116,36 @@ label {
   max-width: 90%;
   max-height: 90%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  /* Ensure clicks reach the lightbox but don't close it */
+  pointer-events: none;
+}
+
+/* navigation buttons */
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  z-index: 1010;
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+}
+
+.lightbox-nav.prev {
+  left: 1rem;
+}
+.lightbox-nav.next {
+  right: 1rem;
+}
+
+.lightbox-nav:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .close {
