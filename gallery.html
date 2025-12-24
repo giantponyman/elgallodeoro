@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>El Gallo de Oro</title>
+    <title>Downloads</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -41,41 +41,14 @@
       </p>
     </div>
 
-    <!-- about -->
-<div class="footer">
-      <p><em>
-        In 1963, my grandparents Lily and Sam established El Gallo de Oro on
-        Calle Fortaleza in San Juan, Puerto Rico. For more than fifty years
-        their jewelry store was a staple of the old city, a magical place where
-        you would always find warm conversation and precious, beautiful things
-        from all over the world. In 2010 they closed shop, and in 2025 I
-        re-opened El Gallo de Oro as a publisher of limited records, CDs, and print
-        editions. -Eli Neuman-Hammond</p></em>
-    </div>
-
-     <!-- news-->
-      <div class="projects">
-       <h1>News</h1>
-<img class="documentation" src="images/poster-for-web.jpg"/>
-      </div>
-
-    <!-- publications -->
-  <div class="projects">
-  <h1>Publications</h1>
-<a href="elgallo1.html">elgallo1: The Americanization of Shmuel</a></li>
-  </div>
-
-    <!-- contact -->
-       <div class="projects">
-    <h1>Contact & Purchases</h1>
-   <p> To purchase records email me eli@elgallodeoro.net or visit   <a
-        href="https://elgallo.bandcamp.com/"
+    <!-- footer -->
+    <div class="footer">
+      <p> Please find your digital release link below. Downloads are password protected. If you have any issues getting your files, or you would like to buy a different release, please shoot me an email eli@elgallodeoro.net
+      <p><a
+        href="https://drive.proton.me/urls/B5662SS79M#RtK60jPWYWmr"
+      >elgallo01: The Americanization of Shmuel </a
       >
-        our bandcamp.</a
-      >
-      <p>If you purchased a digital download, hop over to our <a
-        href="/downloads.html"
-      >download page.</a> </p>
+      </p>
       <p>   <form class="contact"
         action="https://buttondown.com/api/emails/embed-subscribe/elineumanhammond"
         method="post"
@@ -86,35 +59,12 @@
         <label for="bd-email">Subscribe to my newsletter:
         </label>
         <input type="email" name="email" id="bd-email" placeholder="your email" />
-        
         <input type="submit" value="Subscribe"  />
           <a href="https://buttondown.com/refer/elineumanhammond" target="_blank"> </a>
          </form> </p>
-</div>
-
+           <p><a
+        href="/index.html"
+      >Take me home!</a> </p>
+    </div>
   </body>
-
-  <script>
-  // Open <details> if its anchor is targeted
-  window.addEventListener('DOMContentLoaded', function() {
-    if (window.location.hash) {
-      const el = document.querySelector(window.location.hash);
-      if (el && el.tagName.toLowerCase() === 'details') {
-        el.open = true;
-        el.scrollIntoView({behavior: "smooth"});
-      }
-    }
-    // Also handle clicks on project links
-    document.querySelectorAll('.project-links a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        const hash = this.getAttribute('href');
-        const el = document.querySelector(hash);
-        if (el && el.tagName.toLowerCase() === 'details') {
-          el.open = true;
-        }
-      });
-    });
-  });
-</script>
-
 </html>
