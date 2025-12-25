@@ -3,30 +3,64 @@
 }
 
 p {
-  color: rgb(2, 27, 167);
+  color: rgb(0, 0, 0);
 }
 
-h1 {
+href {
+  text-decoration: none;
   color: rgb(2, 27, 167);
-  font-family: arial;
+
+}
+h1 {
+  color: black;
+  font-family: serif;
+  font-weight: normal;
+  margin-top: 0.2em;
+  padding-top: 0;
+}
+
+h2 {
+  color: #000000;
+  font-family: serif;
   font-weight: normal;
   margin-top: 0.5em;
   padding-top: 0;
 }
-h2 {
+
+.publication {
   color: rgb(2, 27, 167);
-  font-family: arial;
-  font-weight: normal;
-  margin-top: 0.5em;
-  padding-top: 0;
+  font-family: serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 0.2em;
+}
+
+.publication:hover {
+  text-decoration: underline;
 }
 label {
   color: rgb(2, 27, 167);
 }
+
 .banner {
   width: 100%;
   margin-bottom: 0.5em;
 }
+nav {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+nav a {
+  color: rgb(2, 27, 167);
+  font-family: serif;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 0 1em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* Make it a marquee */
 .marquee {
   margin: 0 auto;
@@ -184,12 +218,12 @@ audio::-webkit-media-controls-timeline {
 
 /* || header*/
 .header {
-  padding-top: 0.5em;
+  padding-top: 0.2em;
   order: 0;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(2, 27, 167);
+  color: #ce9401;
   padding-left: 1em;
   padding-right: 1em;
 }
